@@ -50,7 +50,8 @@ image_transform = transforms.Compose([
 HF_REPO_ID = "firesquad/master_dataset"
 HF_TOKEN = os.getenv("HF_TOKEN") 
 
-DISK_PATH = Path("/mnt/data")
+# DISK_PATH = Path("/mnt/data")
+DISK_PATH = Path("local_cache")
 DISK_PATH.mkdir(exist_ok=True)
 TEMP_DIR = Path("temp_uploads")
 TEMP_DIR.mkdir(exist_ok=True)
